@@ -5,30 +5,32 @@
  * @category     MageVision
  * @package      MageVision_AdminCategoryProductThumbnail
  * @author       MageVision Team
- * @copyright    Copyright (c) 2016 MageVision (http://www.magevision.com)
+ * @copyright    Copyright (c) 2017 MageVision (http://www.magevision.com)
  * @license      http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 namespace MageVision\AdminCategoryProductThumbnail\Block\Adminhtml\Category\Tab\Product\Grid\Renderer;
 
 use Magento\Backend\Block\Widget\Grid\Column\Renderer\AbstractRenderer;
+use Magento\Backend\Block\Context;
+use Magento\Catalog\Helper\Image as ImageHelper;
 
 class Image extends AbstractRenderer
 {
     /**
      * Image Helper
      *
-     * @var \Magento\Catalog\Helper\Image
+     * @var ImageHelper
      */
     protected $imageHelper;
     
     /**
-     * @param \Magento\Backend\Block\Context $context
-     * @param \Magento\Catalog\Helper\Image $imageHelper
+     * @param Context $context
+     * @param ImageHelper $imageHelper
      * @param array $data
      */
     public function __construct(
-        \Magento\Backend\Block\Context $context,
-        \Magento\Catalog\Helper\Image $imageHelper,
+        Context $context,
+        ImageHelper $imageHelper,
         array $data = []
     ) {
         $this->imageHelper = $imageHelper;

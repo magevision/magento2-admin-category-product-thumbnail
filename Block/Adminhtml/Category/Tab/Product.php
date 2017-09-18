@@ -5,13 +5,10 @@
  * @category     MageVision
  * @package      MageVision_AdminCategoryProductThumbnail
  * @author       MageVision Team
- * @copyright    Copyright (c) 2016 MageVision (http://www.magevision.com)
+ * @copyright    Copyright (c) 2017 MageVision (http://www.magevision.com)
  * @license      http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 namespace MageVision\AdminCategoryProductThumbnail\Block\Adminhtml\Category\Tab;
-
-use Magento\Backend\Block\Widget\Grid;
-use Magento\Backend\Block\Widget\Grid\Extended;
 
 class Product extends \Magento\Catalog\Block\Adminhtml\Category\Tab\Product
 {
@@ -39,7 +36,7 @@ class Product extends \Magento\Catalog\Block\Adminhtml\Category\Tab\Product
             [
                 'header' => __('Thumbnail'),
                 'index' => 'image',
-                'renderer' => '\MageVision\AdminCategoryProductThumbnail\Block\Adminhtml\Category\Tab\Product\Grid\Renderer\Image',
+                'renderer' => \MageVision\AdminCategoryProductThumbnail\Block\Adminhtml\Category\Tab\Product\Grid\Renderer\Image::class,
                 'filter' => false,
                 'sortable' => false,
                 'column_css_class' => 'data-grid-thumbnail-cell'
