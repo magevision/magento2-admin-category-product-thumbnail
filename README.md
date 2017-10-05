@@ -24,7 +24,7 @@ Magento Community Edition 2.0 - 2.1 - 2.2
 		2. Navigate to menu My Account → My Downloads
 		3. Find the extension and click to download it
 	* Extract the downloaded ZIP file in a temporary directory
-	* Upload the extracted folders and files of the extension to base (root) Magento directory. Do not replace the whole folders, but merge them.
+	* Upload the extracted folders and files of the extension to base (root) Magento directory. Do not replace the whole folders, but merge them. If you have downloaded the extension from Magento Marketplace, then create the following folder path app/code/MageVision/AdminCategoryProductThumbnail and upload there the extracted folders and files.
         * Connect via SSH to your Magento server as, or switch to, the Magento file system owner and run the following commands from the (root) Magento directory:
             1. cd path_to_the_magento_root_directory 
             2. php -f bin/magento module:enable MageVision_AdminCategoryProductThumbnail
