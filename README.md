@@ -15,7 +15,7 @@ The Admin Category Product Thumbnail extension is a simple but really useful ext
 	* 100% open source
 
 ## Compatibility
-Magento Community Edition 2.0 - 2.1 - 2.2
+Magento Community Edition 2.0 - 2.1 - 2.2 - 2.3
 
 ## Installing the Extension
 	* Backup your web directory and store database
@@ -27,10 +27,12 @@ Magento Community Edition 2.0 - 2.1 - 2.2
 	* Upload the extracted folders and files of the extension to base (root) Magento directory. Do not replace the whole folders, but merge them. If you have downloaded the extension from Magento Marketplace, then create the following folder path app/code/MageVision/AdminCategoryProductThumbnail and upload there the extracted folders and files.
         * Connect via SSH to your Magento server as, or switch to, the Magento file system owner and run the following commands from the (root) Magento directory:
             1. cd path_to_the_magento_root_directory 
-            2. php -f bin/magento module:enable MageVision_AdminCategoryProductThumbnail
-            3. php -f bin/magento setup:upgrade
-            4. php -f bin/magento setup:di:compile
-            5. php -f bin/magento setup:static-content:deploy
+            2. php bin/magento maintenance:enable
+            3. php bin/magento module:enable MageVision_AdminCategoryProductThumbnail
+            4. php bin/magento setup:upgrade
+            5. php bin/magento setup:di:compile
+            6. php bin/magento setup:static-content:deploy
+            7. php bin/magento maintenance:disable
         * Log out from Magento admin and log in again
 
 ## Support
