@@ -15,7 +15,7 @@ The Admin Category Product Thumbnail extension is a simple but really useful ext
 	* 100% open source
 
 ## Compatibility
-Magento Community Edition 2.0 - 2.1 - 2.2 - 2.3
+Magento Community Edition 2.3
 
 ## Installing the Extension
 	* Backup your web directory and store database
