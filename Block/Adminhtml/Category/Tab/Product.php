@@ -5,7 +5,7 @@
  * @category     MageVision
  * @package      MageVision_AdminCategoryProductThumbnail
  * @author       MageVision Team
- * @copyright    Copyright (c) 2019 MageVision (http://www.magevision.com)
+ * @copyright    Copyright (c) 2020 MageVision (http://www.magevision.com)
  * @license      http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 declare(strict_types=1);
@@ -49,7 +49,7 @@ class Product extends \Magento\Catalog\Block\Adminhtml\Category\Tab\Product
             'entity_id'
         );
         $this->sortColumnsByOrder();
-        
+
         return $this;
     }
 }
