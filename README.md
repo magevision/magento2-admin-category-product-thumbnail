@@ -15,9 +15,9 @@ The Admin Category Product Thumbnail extension is a simple but really useful ext
 	* 100% open source
 
 ## Compatibility
-Magento Community Edition 2.3 - 2.4
+Magento Community Edition 2.4
 
-## Installing the Extension
+## Installing the Extension using an archive and FTP
 	* Backup your web directory and store database
 	* Download the extension
 		1. Sign in to your account
@@ -28,12 +28,24 @@ Magento Community Edition 2.3 - 2.4
         * Connect via SSH to your Magento server as, or switch to, the Magento file system owner and run the following commands from the (root) Magento directory:
             1. cd path_to_the_magento_root_directory 
             2. php bin/magento maintenance:enable
-            3. php bin/magento module:enable MageVision_AdminCategoryProductThumbnail
+            3. php bin/magento module:enable MageVision_AdminCategoryProductThumbnail --clear-static-content
             4. php bin/magento setup:upgrade
             5. php bin/magento setup:di:compile
             6. php bin/magento setup:static-content:deploy
             7. php bin/magento maintenance:disable
         * Log out from Magento admin and log in again
+
+## Installing the Extension via composer
+	* Backup your web directory and store database
+    * Connect via SSH to your Magento server as, or switch to, the Magento file system owner and run the following commands from the (root) Magento directory:
+        1. cd path_to_the_magento_root_directory 
+        2. php bin/magento maintenance:enable
+        3. composer require magevision/module-admin-category-product-thumbnail
+        4. php bin/magento module:enable MageVision_AdminCategoryProductThumbnail --clear-static-content
+        5. php bin/magento setup:upgrade
+        6. php bin/magento setup:di:compile
+        7. php bin/magento setup:static-content:deploy
+        8. php bin/magento maintenance:disable
 
 ## Support
 If you need support or have any questions directly related to a [MageVision](https://www.magevision.com/) extension, please contact us at [support@magevision.com](mailto:support@magevision.com)

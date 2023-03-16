@@ -5,15 +5,15 @@
  * @category     MageVision
  * @package      MageVision_AdminCategoryProductThumbnail
  * @author       MageVision Team
- * @copyright    Copyright (c) 2022 MageVision (https://www.magevision.com)
+ * @copyright    Copyright (c) 2023 MageVision (https://www.magevision.com)
  * @license      http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 declare(strict_types=1);
 
 namespace MageVision\AdminCategoryProductThumbnail\Block\Adminhtml\Category\Tab\Product\Grid\Renderer;
 
-use Magento\Backend\Block\Widget\Grid\Column\Renderer\AbstractRenderer;
 use Magento\Backend\Block\Context;
+use Magento\Backend\Block\Widget\Grid\Column\Renderer\AbstractRenderer;
 use Magento\Catalog\Helper\Image as ImageHelper;
 use Magento\Framework\DataObject;
 
@@ -51,6 +51,6 @@ class Image extends AbstractRenderer
         $image = 'product_listing_thumbnail';
         $imageUrl = $this->imageHelper->init($row, $image)->getUrl();
 
-        return '<img src="'.$imageUrl.'" width="50"/>';
+        return '<img src="' . $imageUrl . '" width="50"/>';
     }
 }

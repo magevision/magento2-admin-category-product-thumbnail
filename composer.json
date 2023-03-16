@@ -3,13 +3,13 @@
     "description": "Admin Category Product Thumbnail Extension for Magento 2",
     "keywords": ["Magento 2", "Admin Category", "Product Thumbnail", "Products in Category", "Magento Backend"],
     "require": {
-        "php": "~7.1.3||~7.2.0||~7.3.0||~7.4.0||~8.1.0",
-        "magento/framework": "102.0.*||103.0.*",
-        "magento/module-backend": "101.0.*||102.0.*",
-        "magento/module-catalog": "103.0.*||104.0.*"
+        "php": "~7.3.0||~7.4.0||~8.1.0||~8.2.0",
+        "magento/framework": "103.0.*",
+        "magento/module-backend": "102.0.*",
+        "magento/module-catalog": "104.0.*"
     },
     "type": "magento2-module",
-    "version": "2.4.1",
+    "version": "2.4.2",
     "license": [
         "OSL-3.0",
         "AFL-3.0"

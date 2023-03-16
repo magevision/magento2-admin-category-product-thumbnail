@@ -5,15 +5,15 @@
  * @category     MageVision
  * @package      MageVision_AdminCategoryProductThumbnail
  * @author       MageVision Team
- * @copyright    Copyright (c) 2022 MageVision (https://www.magevision.com)
+ * @copyright    Copyright (c) 2023 MageVision (https://www.magevision.com)
  * @license      http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 declare(strict_types=1);
 
 namespace MageVision\AdminCategoryProductThumbnail\Block\Adminhtml\Category\Tab;
 
-use MageVision\AdminCategoryProductThumbnail\Block\Adminhtml\Category\Tab\Product\Grid\Renderer\Image;
 use Magento\Framework\Data\Collection;
+use MageVision\AdminCategoryProductThumbnail\Block\Adminhtml\Category\Tab\Product\Grid\Renderer\Image;
 
 class Product extends \Magento\Catalog\Block\Adminhtml\Category\Tab\Product
 {
