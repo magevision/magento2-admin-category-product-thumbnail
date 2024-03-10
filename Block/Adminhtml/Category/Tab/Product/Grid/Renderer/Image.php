@@ -5,7 +5,7 @@
  * @category     MageVision
  * @package      MageVision_AdminCategoryProductThumbnail
  * @author       MageVision Team
- * @copyright    Copyright (c) 2023 MageVision (https://www.magevision.com)
+ * @copyright    Copyright (c) 2024 MageVision (https://www.magevision.com)
  * @license      http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 declare(strict_types=1);
@@ -19,12 +19,7 @@ use Magento\Framework\DataObject;
 
 class Image extends AbstractRenderer
 {
-    /**
-     * Image Helper
-     *
-     * @var ImageHelper
-     */
-    protected $imageHelper;
+    protected ImageHelper $imageHelper;
 
     /**
      * @param Context $context
