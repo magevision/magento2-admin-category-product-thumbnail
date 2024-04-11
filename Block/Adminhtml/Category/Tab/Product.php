@@ -2,11 +2,11 @@
 /**
  * MageVision Admin Category Product Thumbnail Extension
  *
- * @category     MageVision
- * @package      MageVision_AdminCategoryProductThumbnail
- * @author       MageVision Team
- * @copyright    Copyright (c) 2024 MageVision (https://www.magevision.com)
- * @license      http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @category  MageVision
+ * @package   MageVision_AdminCategoryProductThumbnail
+ * @author    MageVision Team
+ * @copyright Copyright (c) 2024 MageVision (https://www.magevision.com)
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 declare(strict_types=1);
 
@@ -20,7 +20,7 @@ class Product extends \Magento\Catalog\Block\Adminhtml\Category\Tab\Product
     /**
      * Set collection object adding product thumbnail
      *
-     * @param Collection $collection
+     * @param  Collection $collection
      * @return void
      */
     public function setCollection($collection)
@@ -31,6 +31,7 @@ class Product extends \Magento\Catalog\Block\Adminhtml\Category\Tab\Product
 
     /**
      * add column image with a custom renderer and after column entity_id
+     *
      * @return Product
      */
     protected function _prepareColumns(): Product

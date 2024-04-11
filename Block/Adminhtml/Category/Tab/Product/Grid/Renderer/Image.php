@@ -2,11 +2,11 @@
 /**
  * MageVision Admin Category Product Thumbnail Extension
  *
- * @category     MageVision
- * @package      MageVision_AdminCategoryProductThumbnail
- * @author       MageVision Team
- * @copyright    Copyright (c) 2024 MageVision (https://www.magevision.com)
- * @license      http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @category  MageVision
+ * @package   MageVision_AdminCategoryProductThumbnail
+ * @author    MageVision Team
+ * @copyright Copyright (c) 2024 MageVision (https://www.magevision.com)
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 declare(strict_types=1);
 
@@ -22,9 +22,9 @@ class Image extends AbstractRenderer
     protected ImageHelper $imageHelper;
 
     /**
-     * @param Context $context
+     * @param Context     $context
      * @param ImageHelper $imageHelper
-     * @param array $data
+     * @param array       $data
      */
     public function __construct(
         Context $context,
@@ -38,8 +38,8 @@ class Image extends AbstractRenderer
     /**
      * Renders grid column
      *
-     * @param DataObject $row
-     * @return  string
+     * @param  DataObject $row
+     * @return string
      */
     public function render(DataObject $row): string
     {
